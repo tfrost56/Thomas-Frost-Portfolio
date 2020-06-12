@@ -355,7 +355,7 @@ html {
         top: 5rem; } }
 
 .about-me {
-  background-image: linear-gradient(to right top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(/img/background.jpg);
+  background-image: linear-gradient(to right top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(/img/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -411,7 +411,7 @@ html {
         font-size: 1.5rem !important; } }
 
 .contact {
-  background-image: linear-gradient(to top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(/img/contact.jpg);
+  background-image: linear-gradient(to top right, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(/img/test.jpg);
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -507,7 +507,7 @@ html {
 .skill-set {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(to bottom right, #23a6d5, #ee7752, #e73c7e); }
+  background-image: linear-gradient(to top right, rgba(35, 166, 213, 0.9), rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.5)); }
   @media only screen and (max-width: 37.5em) {
     .skill-set {
       height: 100%; } }
