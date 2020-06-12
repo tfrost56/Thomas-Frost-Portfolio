@@ -1,0 +1,81 @@
+// MEDIA QUERY MANAGER
+/*
+
+0-600PX:        Phone
+600-900px:      Tablet Portrait
+900-1200px:     Tablet Landscape
+1200px - 1800px regualr styles
+
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+
+
+ORDER: 
+Base + Typography
+General Layout + Grid
+Page Layout
+Components
+
+1em = 16px
+*/
+$bp-tab-land: 75em;               //1200px  
+$bp-larger: 70.25em;               //1120px  
+$bp-large: 68.75em;               //1100px  
+$bp-tab-port: 56.25em;               //900px  
+$bp-tab-medium: 48em;               //770px  
+$bp-phone: 37.5em;               //600px  
+$bp-smallish-phone: 29.9em;               //480px  
+$bp-small-phone: 21em;               //350px  
+
+$bp-tall-phone: 51.25em;           //820px high
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //1 rem = 10px: 10px/16px = 62.5%
+    scroll-behavior: smooth;
+    font-family: 'Lato', Arial, sans-serif;
+    
+    @media only screen and (max-width: $bp-tab-land){
+        font-size: 50%; //1 rem = 8px: 8px/16px = 50%
+    };
+}
+
+.about-page{
+    box-sizing: border-box;
+    
+        
+    
+}
+
+.skills {
+    height: 100vh;
+    width: 100%;
+}
+/////////////////////////
+// Page container for Portfolio Page
+
+
+.container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: [center-start] repeat(8, [col-start] 
+    minmax(min-content, 1fr) [col-end]) [center-end]; 
+    background-color:rgba(255, 255, 255, .7);
+
+    @media only screen and (max-width: $bp-tab-port){
+       
+        grid-template-rows: min-content 100%;
+        
+    };
+    
+}
+

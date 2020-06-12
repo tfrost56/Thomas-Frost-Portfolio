@@ -1,0 +1,24 @@
+// MEDIA QUERY MANAGER
+/*
+
+0-600PX:        Phone
+600-900px:      Tablet Portrait
+900-1200px:     Tablet Landscape
+1200px - 1800px regualr styles
+1800px + :      Big Desktop
+
+
+$breakpoint argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: 
+Base + Typography
+General Layout + Grid
+Page Layout
+Components
+
+1em = 16px
+*/

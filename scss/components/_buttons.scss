@@ -1,0 +1,35 @@
+.btn:link,
+.btn:visited, 
+.btn-site:link,
+.btn-site:visited {
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    cursor: pointer;
+    width: 25%;
+    opacity: 1;
+    border-radius: 100px;
+    padding: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(black, .5);
+    transform: translateY(-5rem);
+    backface-visibility: hidden;
+    
+    @media only screen and (max-width: $bp-tab-land){
+        box-shadow: 0 1.5rem 2rem rgba(black, .2);
+    };
+    @media only screen and (max-width: $bp-smallish-phone){
+        width: 35%;
+    };
+
+    
+}
+
+
+    
+    
+    
+    
+    
+
+

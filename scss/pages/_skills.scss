@@ -1,0 +1,124 @@
+.skill-set {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba($color-primary-3, 1),
+        rgba($color-primary-1, 1),
+        rgba($color-primary-2, 1)
+        
+        );
+
+        @media only screen and (max-width: $bp-phone){
+            height: 100%;
+            
+         }; 
+
+    &__container {
+        margin: auto;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-tab-port){
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            
+        };
+
+        @media only screen and (max-width: $bp-phone){
+            
+            
+         }; 
+        @media only screen and (max-width: $bp-small-phone){
+           
+           
+        }; 
+    }
+
+    &__experience {
+        flex: 0 0 40%;
+        padding: 5rem;
+        margin-right: 5rem;
+        
+        @media only screen and (max-width: $bp-tab-port){
+            flex: 0 0 25%;
+            margin-right: 0;
+        };
+        @media only screen and (max-width: $bp-phone){
+            flex: 0 0 0%;
+            margin-right: 0;
+        };
+        @media only screen and (max-height: $bp-tall-phone){
+            padding-top: 0;
+         }; 
+                
+    }
+      &__text { 
+        font-weight: 300;
+        font-size: 2rem;
+        color: #fff;
+        
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        
+    }
+    
+    &__progress {
+        
+        padding: 2rem;
+        border: 1px solid #fff;
+        flex: 0 0 25%;
+        
+        @media only screen and (max-width: $bp-phone){
+            padding: 1rem 0 0 0;
+            
+        };
+        @media only screen and (max-width: $bp-small-phone){
+            
+         };
+    }
+
+    &__list {
+        text-decoration: none;
+        list-style: none;
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 300;
+        
+        display: grid;
+        grid-template-columns: repeat(2, min-content);
+        column-gap: 2rem;
+        justify-content: center;
+        
+        
+
+
+        
+        
+    }
+
+    &__icon {
+        height: 4rem;
+        width: 4rem;
+        margin-right: 1rem;
+    }
+
+    &__items {
+        
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        
+        
+        
+    }
+
+    
+    
+}
