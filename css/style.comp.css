@@ -355,7 +355,7 @@ html {
         top: 5rem; } }
 
 .about-me {
-  background-image: linear-gradient(to right top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(../img/bg.jpg);
+  background-image: linear-gradient(to right top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(./img/bg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
