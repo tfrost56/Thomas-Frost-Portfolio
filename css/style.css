@@ -107,9 +107,9 @@ html {
 .header-3 {
   text-transform: uppercase;
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
-  color: #fff; }
+  color: #a39191; }
 
 .pf {
   position: fixed; }
@@ -506,8 +506,7 @@ html {
 
 .skill-set {
   height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(to top right, rgba(35, 166, 213, 0.9), rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.5)); }
+  width: 100vw; }
   @media only screen and (max-width: 37.5em) {
     .skill-set {
       height: 100%; } }
@@ -540,14 +539,14 @@ html {
       .skill-set__experience {
         padding-top: 0; } }
   .skill-set__text {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 2rem;
-    color: #fff; }
+    color: #a39191; }
     .skill-set__text:not(:last-child) {
       margin-bottom: 2rem; }
   .skill-set__progress {
     padding: 2rem;
-    border: 1px solid #fff;
+    border: 1px solid #a39191;
     flex: 0 0 25%; }
     @media only screen and (max-width: 37.5em) {
       .skill-set__progress {
@@ -556,8 +555,8 @@ html {
     text-decoration: none;
     list-style: none;
     font-size: 2rem;
-    color: #fff;
-    font-weight: 300;
+    color: #a39191;
+    font-weight: 400;
     display: grid;
     grid-template-columns: repeat(2, min-content);
     column-gap: 2rem;

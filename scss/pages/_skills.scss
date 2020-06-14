@@ -1,13 +1,7 @@
 .skill-set {
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(
-        to top right,
-        rgba($color-primary-3, .9),
-        rgba($color-primary-1, .7),
-        rgba($color-primary-2, .5)
-        
-        );
+    
 
         @media only screen and (max-width: $bp-phone){
             height: 100%;
@@ -59,9 +53,9 @@
                 
     }
       &__text { 
-        font-weight: 300;
+        font-weight: 400;
         font-size: 2rem;
-        color: #fff;
+        color: $color-grey-dark-3;
         
         &:not(:last-child) {
             margin-bottom: 2rem;
@@ -72,7 +66,7 @@
     &__progress {
         
         padding: 2rem;
-        border: 1px solid #fff;
+        border: 1px solid $color-grey-dark-3;
         flex: 0 0 25%;
         
         @media only screen and (max-width: $bp-phone){
@@ -88,8 +82,8 @@
         text-decoration: none;
         list-style: none;
         font-size: 2rem;
-        color: #fff;
-        font-weight: 300;
+        color: $color-grey-dark-3;
+        font-weight: 400;
         
         display: grid;
         grid-template-columns: repeat(2, min-content);
