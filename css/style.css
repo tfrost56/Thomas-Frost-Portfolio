@@ -445,7 +445,9 @@ body {
     width: 5rem;
     transform: translateY(2.5rem); }
   .contact__icon-text {
-    padding: 2rem; }
+    padding: 2rem;
+    text-decoration: none;
+    color: #a39191; }
   .contact__icon-link:link, .contact__icon-link:visited {
     text-decoration: none;
     padding: 2rem;
@@ -456,9 +458,6 @@ body {
     background-color: rgba(163, 145, 145, 0.5);
     border-radius: 50%;
     margin-bottom: 2rem; }
-  .contact__number {
-    text-decoration: none;
-    color: #a39191; }
 
 .intro {
   width: 100%;

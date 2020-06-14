@@ -62,7 +62,8 @@
 
     &__icon-text {
         padding: 2rem;
-       
+        text-decoration: none;
+        color: $color-grey-dark-3;
     }
 
     &__icon-link:link, 
@@ -81,9 +82,5 @@
         margin-bottom: 2rem;   
     }   
 
-    &__number {
-            text-decoration: none;
-            color: $color-grey-dark-3;
-        
-    }
+    
 }
