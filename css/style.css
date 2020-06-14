@@ -71,16 +71,18 @@ Components
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  font-family: 'Lato', Arial, sans-serif; }
+  font-family: 'Lato', Arial, sans-serif;
+  height: 100%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
 
-.about-page {
-  box-sizing: border-box; }
+body {
+  box-sizing: border-box;
+  height: 100%; }
 
 .skills {
-  height: 100vh;
+  height: 100%;
   width: 100%; }
 
 .container {
@@ -143,13 +145,8 @@ html {
     .btn:visited,
     .btn-site:link,
     .btn-site:visited {
-      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); } }
-  @media only screen and (max-width: 29.9em) {
-    .btn:link,
-    .btn:visited,
-    .btn-site:link,
-    .btn-site:visited {
-      width: 35%; } }
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
+      width: 40%; } }
 
 .navigation {
   font-size: 2rem;
@@ -162,7 +159,6 @@ html {
     .navigation {
       flex-direction: row;
       width: 100%;
-      position: relative;
       height: max-content;
       grid-column: col-start 4/col-end 5;
       grid-row: 1/2;
@@ -236,7 +232,7 @@ html {
 
 .menu-btn {
   z-index: 100;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,10 +268,11 @@ html {
     .nav-active {
       flex-direction: column;
       justify-content: center;
-      height: 100vh;
+      height: 100%;
       background-color: black;
       grid-column: 1/-1;
-      opacity: 1; } }
+      opacity: 1;
+      position: fixed; } }
 
 .portfolio {
   grid-column: col-start 2/col-end 7;
@@ -355,23 +352,16 @@ html {
         top: 5rem; } }
 
 .about-me {
-  background-image: linear-gradient(to right top, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(./img/bg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh; }
-  @media only screen and (max-width: 37.5em) {
-    .about-me {
-      height: 100%; } }
+  min-height: 100%;
+  display: flex;
+  padding: 7rem; }
 
 .profile {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 60%;
-  height: 100%;
-  margin: 0 auto;
+  margin: auto;
   justify-content: center; }
   @media only screen and (max-width: 48em) {
     .profile {
@@ -395,15 +385,15 @@ html {
     text-align: center; }
   .profile__header {
     font-size: 4rem;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 2rem;
-    color: #fff; }
+    color: #a39191; }
   .profile__text {
     font-size: 2rem;
     line-height: 3rem;
-    color: #fff;
-    font-weight: 300;
+    color: #a39191;
+    font-weight: 400;
     letter-spacing: 1px;
     padding: 2rem; }
     @media only screen and (max-width: 56.25em) {
@@ -411,27 +401,20 @@ html {
         font-size: 1.5rem !important; } }
 
 .contact {
-  background-image: linear-gradient(to top right, rgba(238, 119, 82, 0.7), rgba(231, 60, 126, 0.7), rgba(35, 166, 213, 0.7), rgba(35, 213, 171, 0.7)), url(../img/test.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  padding: 7rem; }
   @media only screen and (max-width: 29.9em) {
     .contact {
-      height: 100%;
       background-position: center; } }
   .contact__card {
     margin: auto;
-    padding: 5rem;
-    color: #fff;
+    color: #b4b2b2;
     max-width: 150rem;
     font-size: 1.6rem;
     text-align: center; }
-  .contact__title {
-    padding-bottom: 2rem;
-    font-size: 5rem;
-    font-weight: 400; }
   .contact__text {
     font-size: 2rem;
     line-height: 3rem;
@@ -463,7 +446,7 @@ html {
   .contact__icon-background {
     height: 10rem;
     width: 10rem;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(163, 145, 145, 0.5);
     border-radius: 50%;
     margin-bottom: 2rem; }
 
@@ -474,8 +457,7 @@ html {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
   background-size: 400% 400%;
   position: relative;
-  animation: change 10s ease-in-out infinite;
-  position: relative; }
+  animation: change 10s ease-in-out infinite; }
   .intro__box {
     position: absolute;
     border: 3px solid #fff;
@@ -505,11 +487,10 @@ html {
     color: #fff; }
 
 .skill-set {
-  height: 100vh;
-  width: 100vw; }
-  @media only screen and (max-width: 37.5em) {
-    .skill-set {
-      height: 100%; } }
+  min-height: 100%;
+  width: 100%;
+  padding: 7rem;
+  display: flex; }
   .skill-set__container {
     margin: auto;
     display: flex;
@@ -525,16 +506,15 @@ html {
         justify-content: center; } }
   .skill-set__experience {
     flex: 0 0 40%;
-    padding: 5rem;
     margin-right: 5rem; }
     @media only screen and (max-width: 56.25em) {
       .skill-set__experience {
         flex: 0 0 25%;
-        margin-right: 0; } }
+        margin-right: 0;
+        margin-bottom: 3rem; } }
     @media only screen and (max-width: 37.5em) {
       .skill-set__experience {
-        flex: 0 0 0%;
-        margin-right: 0; } }
+        flex: 0 0 0%; } }
     @media only screen and (max-height: 51.25em) {
       .skill-set__experience {
         padding-top: 0; } }

@@ -43,21 +43,25 @@ html {
     font-size: 62.5%; //1 rem = 10px: 10px/16px = 62.5%
     scroll-behavior: smooth;
     font-family: 'Lato', Arial, sans-serif;
+    height: 100%;
     
     @media only screen and (max-width: $bp-tab-land){
         font-size: 50%; //1 rem = 8px: 8px/16px = 50%
     };
 }
 
-.about-page{
+body{
     box-sizing: border-box;
+    height: 100%;
+    
     
         
-    
 }
 
+
+
 .skills {
-    height: 100vh;
+    height: 100%;
     width: 100%;
 }
 /////////////////////////
