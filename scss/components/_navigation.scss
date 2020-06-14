@@ -5,7 +5,7 @@
     height: 100vh;
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     ////////////////////////
     //NAVBAR REMOVAL
     
@@ -129,7 +129,7 @@
 // BURGER BUTTON 
 .menu-btn {
     z-index: 100;
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;

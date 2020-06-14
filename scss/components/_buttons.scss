@@ -7,7 +7,7 @@
     color: black;
     background-color: #fff;
     cursor: pointer;
-    width: 25%;
+    width: 40%;
     opacity: 1;
     border-radius: 100px;
     padding: 1rem;
@@ -17,7 +17,7 @@
     
     @media only screen and (max-width: $bp-tab-land){
         box-shadow: 0 1.5rem 2rem rgba(black, .2);
-        width: 40%;
+        
     };
     
 

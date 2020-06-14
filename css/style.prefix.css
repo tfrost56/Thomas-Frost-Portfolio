@@ -38,13 +38,13 @@ Components
 
 @-webkit-keyframes animate {
   0% {
-    content: "Designer"; }
+    -webkit-keyframes-content: "Designer"; }
   50% {
-    content: "Front End Developer"; }
+    -webkit-keyframes-content: "Front End Developer"; }
   70% {
-    content: "Creator"; }
+    -webkit-keyframes-content: "Creator"; }
   100% {
-    content: "Freelancer"; } }
+    -webkit-keyframes-content: "Freelancer"; } }
 
 @keyframes animate {
   0% {
