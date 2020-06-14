@@ -74,10 +74,10 @@ body{
     grid-template-columns: [center-start] repeat(8, [col-start] 
     minmax(min-content, 1fr) [col-end]) [center-end]; 
     background-color:rgba(255, 255, 255, .7);
-
+    padding-top: 7rem;
     @media only screen and (max-width: $bp-tab-port){
        
-        grid-template-rows: min-content 100%;
+    grid-template-rows: min-content 100%;
         
     };
     
