@@ -30,3 +30,19 @@
     }
     
 }
+
+@-webkit-keyframes animate {
+
+    0%{
+        content: "Designer";
+    }
+    50%{
+        content: "Front End Developer";
+    }
+    70%{
+        content: "Creator";
+    }
+    100%{
+        content: "Freelancer";
+    }
+}

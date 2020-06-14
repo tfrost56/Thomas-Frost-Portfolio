@@ -2,7 +2,9 @@
     min-height: 100%;  
     display: flex;
     padding: 7rem;
-    
+    @media only screen and (max-width: $bp-smallish-phone){
+        padding: 4rem;
+    };
 }
 
 .profile {
@@ -21,10 +23,12 @@
     
 
     &__image {
+        
        padding-bottom: 3rem;
         display: flex;
         width: 25rem;
         height: 25rem;
+        justify-content: center;
         
         @media only screen and (max-width: $bp-phone){
             
