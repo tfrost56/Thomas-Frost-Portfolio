@@ -134,7 +134,7 @@ body {
   color: black;
   background-color: #fff;
   cursor: pointer;
-  width: 25%;
+  width: 40%;
   opacity: 1;
   border-radius: 100px;
   padding: 1rem;
@@ -146,8 +146,7 @@ body {
     .btn:visited,
     .btn-site:link,
     .btn-site:visited {
-      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2);
-      width: 40%; } }
+      box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.2); } }
 
 .navigation {
   font-size: 2rem;
@@ -156,7 +155,7 @@ body {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-  position: fixed; }
+  position: absolute; }
   @media only screen and (max-width: 56.25em) {
     .navigation {
       flex-direction: row;
@@ -234,7 +233,7 @@ body {
 
 .menu-btn {
   z-index: 100;
-  position: fixed;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -358,9 +357,6 @@ body {
   min-height: 100%;
   display: flex;
   padding: 7rem; }
-  @media only screen and (max-width: 29.9em) {
-    .about-me {
-      padding: 4rem; } }
 
 .profile {
   display: flex;
@@ -372,6 +368,9 @@ body {
   @media only screen and (max-width: 48em) {
     .profile {
       width: 90%; } }
+  @media only screen and (max-width: 37.5em) {
+    .profile {
+      width: 100%; } }
   .profile__image {
     padding-bottom: 3rem;
     display: flex;
@@ -445,7 +444,9 @@ body {
     width: 5rem;
     transform: translateY(2.5rem); }
   .contact__icon-text {
-    padding: 2rem; }
+    padding: 2rem;
+    text-decoration: none;
+    color: #a39191; }
   .contact__icon-link:link, .contact__icon-link:visited {
     text-decoration: none;
     padding: 2rem;
