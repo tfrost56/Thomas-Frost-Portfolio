@@ -457,8 +457,8 @@ body {
     border-radius: 50%;
     margin-bottom: 2rem; }
   .contact__number {
-    text-decoration: inherit;
-    color: inherit; }
+    text-decoration: none;
+    color: #a39191; }
 
 .intro {
   width: 100%;
