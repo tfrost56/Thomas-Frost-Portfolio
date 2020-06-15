@@ -43,9 +43,17 @@
        
     }
 
-    &__animate::before {
-        content: "";
-        animation: animate infinite 10s;
-        color: #fff;
+    &__animate {
+        display: none;
+
+        &--1 {
+            display: initial;
+        }
     }
+
+    // &__animate::before {
+    //     content: "";
+    //     animation: animate infinite 10s;
+    //     color: #fff;
+    // }
 }
