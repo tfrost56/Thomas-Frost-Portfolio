@@ -138,6 +138,7 @@
     cursor: pointer;
     transition: all .5s ease-in-out;
     visibility: hidden;
+    
 
     @media only screen and (max-width: $bp-tab-port){
         visibility: visible;
