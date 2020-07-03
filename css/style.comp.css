@@ -29,16 +29,6 @@ Components
   100% {
     background-position: 0 50%; } }
 
-@keyframes animate {
-  0% {
-    content: "Designer"; }
-  50% {
-    content: "Front End Developer"; }
-  70% {
-    content: "Creator"; }
-  100% {
-    content: "Freelancer"; } }
-
 /*
 
 0-600PX:        Phone
@@ -124,6 +114,9 @@ body {
 .bgc::after,
 .bgc {
   background-image: linear-gradient(to right, #EE7752, #E73C7E, #23A6D5, #23D5AB) !important; }
+
+.di {
+  display: initial !important; }
 
 .btn:link,
 .btn:visited,
@@ -454,7 +447,6 @@ body {
   .contact__icon-background {
     height: 10rem;
     width: 10rem;
-    background-color: rgba(163, 145, 145, 0.5);
     border-radius: 50%;
     margin-bottom: 2rem; }
 
@@ -489,10 +481,10 @@ body {
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase; }
-  .intro__animate::before {
-    content: "";
-    animation: animate infinite 10s;
-    color: #fff; }
+  .intro__animate {
+    display: none; }
+    .intro__animate--1 {
+      display: initial; }
 
 .skill-set {
   min-height: 100%;
