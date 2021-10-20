@@ -27,17 +27,11 @@
     };
     
 
-    
-
-    
-
     &__item {
         list-style: none;
         padding: 2rem 2rem;
         align-content: center;
-        text-decoration: none;
-        
-        
+        text-decoration: none;  
     }           
 
     &__link:link, 
@@ -46,10 +40,7 @@
         color: #fff;
         font-weight: 100;
         display: flex;
-        align-items: center;
-
-        
-        
+        align-items: center; 
     }
 
     &__link:hover &__title{
@@ -97,28 +88,28 @@
             display: initial;
             opacity: 1; 
             transform: translateY(0);
-            
-
-            
         };
+
         &--1 {
         color: $color-primary-1;
         font-weight: 400;
-        
-        
         }
+
         &--2 {
             color: $color-primary-2;
             font-weight: 400;
         }
+
         &--3 {
             color: $color-primary-3;
             font-weight: 400;
         }
+
         &--4 {
             color: $color-primary-4;
             font-weight: 400;
         }
+
         &--5 {
             color: $color-primary-5;
             font-weight: 400;

@@ -8,10 +8,10 @@ menuBTN.addEventListener("click", () => {
 });
 
 
-var text = document.querySelector(".intro__sub-header");
-var textContent = text.getElementsByTagName("span");
+let text = document.querySelector(".intro__sub-header");
+let textContent = text.getElementsByTagName("span");
 
-var i = 0;
+let i = 0;
 
 function rotator () {
     textContent[i].style.display = 'none';
